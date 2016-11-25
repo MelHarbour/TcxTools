@@ -21,11 +21,11 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlArrayItem("Workout", IsNullable = false)]
-        public Workout[] Workouts { get; set; }
+        public List<Workout> Workouts = new List<Workout>();
 
         /// <remarks/>
         [XmlArrayItem("Course", IsNullable = false)]
-        public Course[] Courses { get; set; }
+        public List<Course> Courses = new List<Course>();
 
         /// <remarks/>
         public AbstractSource Author { get; set; }

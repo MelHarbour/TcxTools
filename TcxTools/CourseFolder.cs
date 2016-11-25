@@ -14,11 +14,11 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlElement("Folder")]
-        public CourseFolder[] Folder { get; set; }
+        public List<CourseFolder> Folder = new List<CourseFolder>();
 
         /// <remarks/>
         [XmlElement("CourseNameRef")]
-        public NameKeyReference[] CourseNameRef { get; set; }
+        public List<NameKeyReference> CourseNameRef = new List<NameKeyReference>();
 
         /// <remarks/>
         public string Notes { get; set; }

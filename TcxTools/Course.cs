@@ -18,18 +18,18 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlElement("Lap")]
-        public CourseLap[] Lap { get; set; }
+        public List<CourseLap> Lap = new List<CourseLap>();
 
         /// <remarks/>
         [XmlArrayItem("Trackpoint", typeof(Trackpoint), IsNullable = false)]
-        public Trackpoint[][] Track { get; set; }
+        public List<Trackpoint> Track = new List<Trackpoint>();
 
         /// <remarks/>
         public string Notes { get; set; }
 
         /// <remarks/>
         [XmlElement("CoursePoint")]
-        public CoursePoint[] CoursePoint { get; set; }
+        public List<CoursePoint> CoursePoint = new List<CoursePoint>();
 
         /// <remarks/>
         public AbstractSource Creator { get; set; }

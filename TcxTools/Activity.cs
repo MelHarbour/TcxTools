@@ -17,7 +17,7 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlElement("Lap")]
-        public ActivityLap[] Lap { get; set; }
+        public List<ActivityLap> Lap = new List<ActivityLap>();
 
         /// <remarks/>
         public string Notes { get; set; }

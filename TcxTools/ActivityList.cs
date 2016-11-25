@@ -14,10 +14,10 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlElement("Activity")]
-        public Activity[] Activity { get; set; }
+        public List<Activity> Activity = new List<Activity>();
 
         /// <remarks/>
         [XmlElement("MultiSportSession")]
-        public MultiSportSession[] MultiSportSession { get; set; }
+        public List<MultiSportSession> MultiSportSession = new List<MultiSportSession>();
     }
 }

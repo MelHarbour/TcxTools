@@ -14,11 +14,11 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlElement("Folder")]
-        public WorkoutFolder[] Folder { get; set; }
+        public List<WorkoutFolder> Folder = new List<WorkoutFolder>();
 
         /// <remarks/>
         [XmlElement("WorkoutNameRef")]
-        public NameKeyReference[] WorkoutNameRef { get; set; }
+        public List<NameKeyReference> WorkoutNameRef = new List<NameKeyReference>();
 
         /// <remarks/>
         public Extensions Extensions { get; set; }

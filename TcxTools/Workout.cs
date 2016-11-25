@@ -18,11 +18,11 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlElement("Step")]
-        public AbstractStep[] Step { get; set; }
+        public List<AbstractStep> Step = new List<AbstractStep>();
 
         /// <remarks/>
         [XmlElement("ScheduledOn", DataType = "date")]
-        public DateTime[] ScheduledOn { get; set; }
+        public List<DateTime> ScheduledOn = new List<DateTime>();
 
         /// <remarks/>
         public string Notes { get; set; }

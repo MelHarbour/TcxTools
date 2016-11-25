@@ -14,15 +14,15 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlElement("Folder")]
-        public HistoryFolder[] Folder { get; set; }
-        
+        public List<HistoryFolder> Folder = new List<HistoryFolder>();
+
         /// <remarks/>
         [XmlElement("ActivityRef")]
-        public ActivityReference[] ActivityRef { get; set; }
+        public List<ActivityReference> ActivityRef = new List<ActivityReference>();
 
         /// <remarks/>
         [XmlElement("Week")]
-        public Week[] Week { get; set; }
+        public List<Week> Week = new List<Week>();
 
         /// <remarks/>
         public string Notes { get; set; }

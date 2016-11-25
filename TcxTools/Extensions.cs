@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace TcxTools
@@ -14,6 +15,6 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlAnyElement]
-        public System.Xml.XmlElement[] Any { get; set; }
+        public List<XmlElement> Any = new List<XmlElement>();
     }
 }

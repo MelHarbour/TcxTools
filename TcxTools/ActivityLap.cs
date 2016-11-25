@@ -49,7 +49,7 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlArrayItem("Trackpoint", typeof(Trackpoint), IsNullable = false)]
-        public Trackpoint[][] Track { get; set; }
+        public List<Trackpoint> Track = new List<Trackpoint>();
 
         /// <remarks/>
         public string Notes { get; set; }

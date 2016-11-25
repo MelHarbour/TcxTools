@@ -20,7 +20,7 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlElement("NextSport")]
-        public NextSport[] NextSport { get; set; }
+        public List<NextSport> NextSport = new List<NextSport>();
 
         /// <remarks/>
         public string Notes { get; set; }

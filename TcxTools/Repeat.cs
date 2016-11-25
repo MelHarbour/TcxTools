@@ -18,6 +18,6 @@ namespace TcxTools
 
         /// <remarks/>
         [XmlElement("Child")]
-        public AbstractStep[] Child { get; set; }
+        public List<AbstractStep> Child = new List<AbstractStep>();
     }
 }

@@ -14,15 +14,15 @@ namespace TcxTools
     {
         /// <remarks/>
         [XmlElement("Folder")]
-        public MultiSportFolder[] Folder { get; set; }
+        public List<MultiSportFolder> Folder = new List<MultiSportFolder>();
 
         /// <remarks/>
         [XmlElement("MultisportActivityRef")]
-        public ActivityReference[] MultisportActivityRef { get; set; }
+        public List<ActivityReference> MultisportActivityRef = new List<ActivityReference>();
 
         /// <remarks/>
         [XmlElement("Week")]
-        public Week[] Week { get; set; }
+        public List<Week> Week = new List<Week>();
 
         /// <remarks/>
         public string Notes { get; set; }
