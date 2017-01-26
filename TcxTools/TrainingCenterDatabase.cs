@@ -13,6 +13,11 @@ namespace TcxTools
     [XmlRoot("TrainingCenterDatabase", Namespace = "http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2", IsNullable = false)]
     public class TrainingCenterDatabase
     {
+        public TrainingCenterDatabase()
+        {
+            Activities = new ActivityList();
+        }
+
         /// <remarks/>
         public Folders Folders { get; set; }
 
