@@ -51,5 +51,10 @@ namespace TcxTools
 
         /// <remarks/>
         public Extensions Extensions { get; set; }
+
+        public Trackpoint()
+        {
+            Extensions = new Extensions();
+        }
     }
 }
