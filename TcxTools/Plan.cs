@@ -26,5 +26,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public bool IntervalWorkout { get; set; }
+
+        public Plan()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

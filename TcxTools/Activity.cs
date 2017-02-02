@@ -34,5 +34,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public Sport Sport { get; set; }
+
+        public Activity()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

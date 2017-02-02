@@ -60,5 +60,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public DateTime StartTime { get; set; }
+
+        public ActivityLap()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

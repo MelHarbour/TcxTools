@@ -33,5 +33,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public string Name { get; set; }
+
+        public HistoryFolder()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

@@ -26,5 +26,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public string Name { get; set; }
+
+        public WorkoutFolder()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

@@ -23,5 +23,13 @@ namespace TcxTools
 
         /// <remarks/>
         public Extensions Extensions { get; set; }
+
+        public Workouts()
+        {
+            Running = new WorkoutFolder();
+            Biking = new WorkoutFolder();
+            Other = new WorkoutFolder();
+            Extensions = new Extensions();
+        }
     }
 }

@@ -26,5 +26,14 @@ namespace TcxTools
 
         /// <remarks/>
         public Extensions Extensions { get; set; }
+
+        public History()
+        {
+            Running = new HistoryFolder();
+            Biking = new HistoryFolder();
+            Other = new HistoryFolder();
+            MultiSport = new MultiSportFolder();
+            Extensions = new Extensions();
+        }
     }
 }

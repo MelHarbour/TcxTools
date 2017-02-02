@@ -16,6 +16,8 @@ namespace TcxTools
         public TrainingCenterDatabase()
         {
             Activities = new ActivityList();
+            Folders = new Folders();
+            Extensions = new Extensions();
         }
 
         /// <remarks/>

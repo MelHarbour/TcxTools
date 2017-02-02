@@ -20,5 +20,12 @@ namespace TcxTools
 
         /// <remarks/>
         public Courses Courses { get; set; }
+
+        public Folders()
+        {
+            History = new History();
+            Workouts = new Workouts();
+            Courses = new Courses();
+        }
     }
 }

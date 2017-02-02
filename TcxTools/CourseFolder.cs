@@ -29,5 +29,10 @@ namespace TcxTools
         /// <remarks/>
         [XmlAttribute]
         public string Name { get; set; }
+
+        public CourseFolder()
+        {
+            Extensions = new Extensions();
+        }
     }
 }

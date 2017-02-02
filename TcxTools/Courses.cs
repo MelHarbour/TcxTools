@@ -17,5 +17,11 @@ namespace TcxTools
 
         /// <remarks/>
         public Extensions Extensions { get; set; }
+
+        public Courses()
+        {
+            CourseFolder = new CourseFolder();
+            Extensions = new Extensions();
+        }
     }
 }

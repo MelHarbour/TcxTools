@@ -56,5 +56,10 @@ namespace TcxTools
 
         /// <remarks/>
         public Extensions Extensions { get; set; }
+
+        public CourseLap()
+        {
+            Extensions = new Extensions();
+        }
     }
 }
