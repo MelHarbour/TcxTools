@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcxTools", "TcxTools\TcxTools.csproj", "{81A8A36B-A4E9-4FEB-9800-52D8804C966D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcxTools", "TcxTools\TcxTools.csproj", "{81A8A36B-A4E9-4FEB-9800-52D8804C966D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D16E36CA-F7C2-4958-86B9-29204F8B308F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		TrainingCenterDatabasev2.xsd = TrainingCenterDatabasev2.xsd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
