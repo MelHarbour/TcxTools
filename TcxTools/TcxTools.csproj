@@ -1,117 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EC8171C5-D86C-4F08-A080-BC61DE101E52}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TcxTools</RootNamespace>
-    <AssemblyName>TcxTools</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>melharbour</Authors>
+    <Company>melharbour</Company>
+    <PackageLicenseUrl>https://github.com/MelHarbour/TcxTools/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/MelHarbour/TcxTools</RepositoryUrl>
+    <Version>1.1.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/MelHarbour/TcxTools</PackageProjectUrl>
+    <Copyright>Copyright 2017</Copyright>
+    <Description>Tools for manipulating Garmin Training Center XML files.</Description>
+    <PackageReleaseNotes>NET Standard release.</PackageReleaseNotes>
+    <PackageTags>Garmin tcx</PackageTags>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AbstractSource.cs" />
-    <Compile Include="AbstractStep.cs" />
-    <Compile Include="Activity.cs" />
-    <Compile Include="ActivityLap.cs" />
-    <Compile Include="ActivityList.cs" />
-    <Compile Include="ActivityReference.cs" />
-    <Compile Include="Application.cs" />
-    <Compile Include="Build.cs" />
-    <Compile Include="BuildType.cs" />
-    <Compile Include="Cadence.cs" />
-    <Compile Include="CaloriesBurned.cs" />
-    <Compile Include="Course.cs" />
-    <Compile Include="CourseFolder.cs" />
-    <Compile Include="CourseLap.cs" />
-    <Compile Include="CoursePoint.cs" />
-    <Compile Include="CoursePointType.cs" />
-    <Compile Include="Courses.cs" />
-    <Compile Include="CustomHeartRateZone.cs" />
-    <Compile Include="CustomSpeedZone.cs" />
-    <Compile Include="Device.cs" />
-    <Compile Include="Distance.cs" />
-    <Compile Include="Duration.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="FirstSport.cs" />
-    <Compile Include="Folders.cs" />
-    <Compile Include="HeartRate.cs" />
-    <Compile Include="HeartRateAbove.cs" />
-    <Compile Include="HeartRateAsPercentOfMax.cs" />
-    <Compile Include="HeartRateBelow.cs" />
-    <Compile Include="HeartRateInBeatsPerMinute.cs" />
-    <Compile Include="HeartRateValue.cs" />
-    <Compile Include="History.cs" />
-    <Compile Include="HistoryFolder.cs" />
-    <Compile Include="Intensity.cs" />
-    <Compile Include="MultiSportFolder.cs" />
-    <Compile Include="MultiSportSession.cs" />
-    <Compile Include="NameKeyReference.cs" />
-    <Compile Include="NextSport.cs" />
-    <Compile Include="None.cs" />
-    <Compile Include="Plan.cs" />
-    <Compile Include="Position.cs" />
-    <Compile Include="PredefinedHeartRateZone.cs" />
-    <Compile Include="PredefinedSpeedZone.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuickWorkout.cs" />
-    <Compile Include="Repeat.cs" />
-    <Compile Include="SensorState.cs" />
-    <Compile Include="Speed.cs" />
-    <Compile Include="SpeedType.cs" />
-    <Compile Include="Sport.cs" />
-    <Compile Include="Step.cs" />
-    <Compile Include="Target.cs" />
-    <Compile Include="Time.cs" />
-    <Compile Include="Trackpoint.cs" />
-    <Compile Include="Training.cs" />
-    <Compile Include="TrainingCenterDatabase.cs" />
-    <Compile Include="TrainingType.cs" />
-    <Compile Include="TriggerMethod.cs" />
-    <Compile Include="UserInitiated.cs" />
-    <Compile Include="Version.cs" />
-    <Compile Include="Week.cs" />
-    <Compile Include="Workout.cs" />
-    <Compile Include="WorkoutFolder.cs" />
-    <Compile Include="Workouts.cs" />
-    <Compile Include="Zone.cs" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
